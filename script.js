@@ -55,7 +55,6 @@ function game() {
   while (i < 5) {
     const getScore = playRound(playerChoice(), computerChoice());
     console.log(`round: ${i + 1}`);
-    //return `${i + 1} :=> ${getScore}`;
     i++;
   }
 }
