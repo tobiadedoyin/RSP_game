@@ -7,7 +7,62 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p></p>
+    <header>
+      <button id="instruct">instruction</button>
+      <h1>SCROPA GAME</h1>
+      <button id="reset">reset</button>
+    </header>
+
+    <section class="score">
+      <div id="choice"></div>
+      <div class="playerScore">
+        <h3>player <span id="playerScore">0</span></h3>
+        <h3>computer <span id="computerScore">0</span></h3>
+      </div>
+      <div>
+        <h3>
+          Round Result
+          <span
+            style="font-size: 15px; font-weight: 100; width: fit-content"
+            id="roundResult"
+          ></span>
+        </h3>
+      </div>
+    </section>
+
+    <section class="selection">
+      <h2>Player Selection</h2>
+      <div>
+        <button class="scissors" value="Scissors">Scissors</button>
+        <button class="paper" value="Paper">Paper</button>
+        <button class="rock" value="Rock">Rock</button>
+      </div>
+    </section>
+
+    <section class="resilt">
+      <h3>
+        final Score<span
+          style="font-size: 15px; font-weight: 100; width: fit-content"
+          id="final"
+          >Awaiting Winner!</span
+        >
+      </h3>
+    </section>
+     
+    <div class="inst">
+      <ul class="list">
+        <li>computer will  randomly choose one of three signs: rock , paper , or scissors .</li>
+        <li>YOU will  randomly SELECT one of three signs: rock , paper , or scissors.</li>
+        <li>
+        </li>Rock wins over scissors (because rock smashes scissors)</li>
+        <li>Scissors wins over paper (because scissors cut paper)</li>
+        <li>Paper wins over rock (because paper covers rock)</li>
+        <li> If you and computer select the same sign, this result into a tie </li>
+        <li> The first player to reach 5 point wins</li>
+        <li>Press reset to play again</li>
+      </ul>
+    </div>
+   
     <script src="script.js"></script>
   </body>
 </html>
